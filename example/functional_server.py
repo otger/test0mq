@@ -13,8 +13,8 @@ __version__ = '0.1'
 __maintainer__ = 'Otger Ballester'
 __email__ = 'otger@ifae.es'
 
-from daq.logs import get_logger
-from daq.server.server import zmqServer
+from zmqclientserver.logs import get_logger
+from zmqclientserver.server.server import zmqServer
 
 import threading
 import numbers
@@ -87,7 +87,7 @@ class SillyServer(zmqServer):
 
 
 if __name__ == "__main__":
-    from daq.logs import log_add_stream_handler
+    from zmqclientserver.logs import log_add_stream_handler
     log_add_stream_handler()
     s = SillyServer()
     s.init_sockets()

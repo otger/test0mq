@@ -19,7 +19,7 @@ import time
 import uuid
 from abc import ABC, abstractmethod
 
-from daq.logs import get_logger
+from zmqclientserver.logs import get_logger
 
 log = get_logger('common.message')
 

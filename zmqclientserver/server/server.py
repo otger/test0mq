@@ -10,9 +10,9 @@ from abc import ABC, abstractmethod
 import zmq
 import threading
 
-from daq.common.message import MessageBase, MessageType, AsyncMSG, CommandAns, ErrorMSG
+from zmqclientserver.common.message import MessageBase, MessageType, AsyncMSG, CommandAns, ErrorMSG
 
-from daq.logs import get_logger
+from zmqclientserver.logs import get_logger
 
 log = get_logger('server')
 

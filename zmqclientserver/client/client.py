@@ -10,9 +10,9 @@ import zmq
 import threading
 
 import json
-from daq.common.message import MessageBase, CommandMSG
-from daq.client.callbacks import AsyncCallback
-from daq.logs import get_logger
+from zmqclientserver.common.message import MessageBase, CommandMSG
+from zmqclientserver.client.callbacks import AsyncCallback
+from zmqclientserver.logs import get_logger
 
 log = get_logger('sillyclient')
 

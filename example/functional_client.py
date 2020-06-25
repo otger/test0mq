@@ -13,8 +13,8 @@ __version__ = '0.1'
 __maintainer__ = 'Otger Ballester'
 __email__ = 'otger@ifae.es'
 
-from daq.client.client import zmqClient
-from daq.common.message import CommandMSG
+from zmqclientserver.client.client import zmqClient
+from zmqclientserver.common.message import CommandMSG
 from example.commands import CommandTypes
 
 
@@ -36,8 +36,8 @@ class SillyClient(zmqClient):
 
 if __name__ == "__main__":
     import time
-    from daq.client.callbacks import PrintCB
-    from daq.logs import get_logger, log_add_stream_handler
+    from zmqclientserver.client.callbacks import PrintCB
+    from zmqclientserver.logs import get_logger, log_add_stream_handler
     import random
     log = get_logger('funclient')
     log_add_stream_handler()
